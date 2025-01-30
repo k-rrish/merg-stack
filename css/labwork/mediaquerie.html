@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+    .column {
+      flex: 1;
+      padding: 20px;
+      margin: 10px;
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      min-width: 300px;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+
+    media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+
+      .content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Responsive Webpage. All rights reserved.</p>
+  </footer>
+</body>
+</html>
