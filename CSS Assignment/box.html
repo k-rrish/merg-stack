@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+
+.profile-card {
+    width: 300px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box; 
+}
+
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    box-sizing: content-box; 
+}
+
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.follow-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.follow-button:hover {
+    background-color: #45a049;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="profile-card">
+        <img src="/images001.jpg" alt="Profile Picture" class="profile-picture">
+        <h2 class="name">VARMA krrish</h2>
+        <p class="bio">Web developer, tech enthusiast, and coffee lover.</p>
+        <button class="follow-button">Follow</button>
+    </div>
+</body>
+</html>

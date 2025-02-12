@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* reuse */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+#Header {
+    /* height: 400px; */
+    background: url("/images/header.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.logo {
+    width: 70px;
+}
+
+.nav .nav-list .navitem {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navitem .nava {
+    font-size: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #54524f;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-decoration: none;
+}
+
+.icon {
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.icon a {
+    color: #54524f;
+    font-size: 17px;
+}
+
+.header-main {
+    font-family: "Open Sans";
+    padding: 50px 0;
+}
+
+.header-main .header-h1 {
+    /* font-size: clamp(min,, max); */
+    font-size: clamp(20px, 7.5vw, 92px);
+    width: 50%;
+    color: #deb37e;
+    font-weight: 800;
+    filter: drop-shadow(2.575px -4.286px 2.5px rgba(84, 82, 79, 0.22));
+}
+
+.header-main .header-h5 {
+    font-size: clamp(18px, 3.4vw, 25px);
+    letter-spacing: 5px;
+    color: #54524f;
+    font-weight: 700;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.header-main .header-btn {
+    opacity: 0.902;
+    padding: 10px 20px;
+    border-radius: 21px;
+    background-color: #ffffff;
+    font-size: clamp(18px, 3.4vw, 25px);
+    color: #776c64;
+    font-weight: 800;
+    text-align: center;
+}
+
+.header-main .header-p {
+    width: 35%;
+    font-size: clamp(18px, 3.4vw, 25px);
+    letter-spacing: 1px;
+    color: #54524f;
+    font-weight: 400;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+#sec-1 {
+    padding: 30px 0;
+}
+
+.sec1-main {
+    text-align: center;
+}
+
+.sec1-main .sec1-h1 {
+    font-size: clamp(20px, 7.5vw, 65px);
+    text-transform: uppercase;
+    color: #e2a355;
+    font-weight: 800;
+    font-family: "Open Sans";
+}
+
+.sec1-main .sec1-p {
+    font-size: clamp(18px, 3.4vw, 27px);
+    width: 50%;
+    margin: 10px auto;
+    color: #7f7770;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.sec1-card {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+}
+
+.card {
+    background-image: linear-gradient(0deg, rgba(52, 52, 52, 0.7019607843137254) 0%, rgba(67, 64, 55, 0.47058823529411764) 100%);
+}
+
+.card-main {
+    padding: 30px 20px;
+}
+
+.card-main .card-h4 {
+    font-size: clamp(18px, 3.8vw, 29px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.card-main .card-p {
+    font-size: clamp(18px, 3.4vw, 23px);
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+#sec-1 .sec1-btn {
+    font-size: clamp(18px, 3.4vw, 23px);
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px 30px;
+    font-family: "Open Sans";
+    background: linear-gradient(0deg, rgba(52, 52, 52, 0.7019607843137254) 0%, rgba(67, 64, 55, 0.47058823529411764) 100%);
+}
+
+.sec2-main {
+    display: flex;
+    background-image: linear-gradient(0deg, rgba(52, 52, 52, 0.7019607843137254) 0%, rgba(67, 64, 55, 0.47058823529411764) 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2-img {
+    width: 50%;
+}
+
+.sec2-content {
+    width: 50%;
+    padding: 30px;
+}
+
+.sec2-content .sec2-h1 {
+    font-size: clamp(20px, 7.5vw, 58px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.sec2-content .sec2-p {
+    font-size: clamp(18px, 3.8vw, 29px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin: 20px 0;
+}
+
+.sec2-content .sec2-btn {
+    background-color: rgb(245, 164, 78);
+    font-size: clamp(18px, 3.8vw, 29px);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flexbox Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            flex: 0 1 auto; 
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1; 
+            justify-content: space-between; 
+            align-items: stretch; 
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            width: 250px;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .content {
+            flex: 1;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; 
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-bottom: 1rem; 
+            }
+
+            .content {
+                padding: 1rem;
+            }
+        }
+
+        .content.center-align {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: #e2e2e2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flexbox Layout Example</h1>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <p>This is the sidebar.</p>
+            </aside>
+            
+            <div class="content">
+                <h2>Main Content</h2>
+                <p>This is the main content area. You can add more content here.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Footer &copy; 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 20px;
+            width: 70px;
+            background-color: blue;
+            border: 2px solid rgb(11, 25, 216));
+            /* transform: translate(0%,0%); */
+            overflow: none;
+        }
+        .second{
+            height: 20px;
+            width: 70px;
+            border: 2px solid blue;
+            transform: scale(1);
+            margin: 1px auto; 
+            translate: -2px -21px;
+            transition: .6s;
+            /* opacity: none; */
+        }
+        a{
+            color: white;
+            text-align: center;
+            margin: 200px auto;
+            text-decoration: none;
+        }
+        .main:hover .second{
+            transform: scale(1.5);
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <a href="">Shop Now</a>
+        <div class="second"></div>
+
+    </div>
+</body>
+</html>

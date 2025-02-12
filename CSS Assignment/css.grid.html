@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards Grid</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Grid Container */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+            grid-gap: 20px; /* Spacing between the items */
+            max-width: 1000px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Image inside product card */
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Product Title */
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px;
+            color: #333;
+        }
+
+        /* Product Price */
+        .product-price {
+            font-size: 1.1em;
+            color: #e60000;
+            margin: 10px;
+        }
+
+        /* Hover Effect for Product Card */
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr; /* 1 column on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="/product  img 01.jpg" alt="Product 1">
+            <div class="product-title">Product 1</div>
+            <div class="product-price">$19.99</div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="/product img 02.jpg" alt="Product 2">
+            <div class="product-title">Product 2</div>
+            <div class="product-price">$29.99</div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="/product  img 03.jpg" alt="Product 3">
+            <div class="product-title">Product 3</div>
+            <div class="product-price">$39.99</div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img src="/product  img 04.jpg" alt="Product 4">
+            <div class="product-title">Product 4</div>
+            <div class="product-price">$49.99</div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card">
+            <img src="/product  img 05.jpg" alt="Product 5">
+            <div class="product-title">Product 5</div>
+            <div class="product-price">$59.99</div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card">
+            <img src="/product  img 06.jpg" alt="Product 6">
+            <div class="product-title">Product 6</div>
+            <div class="product-price">$69.99</div>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div class="product-card">
+            <img src="/product  img 07.jpg" alt="Product 7">
+            <div class="product-title">Product 7</div>
+            <div class="product-price">$79.99</div>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div class="product-card">
+            <img src="/product  img 08.jpg" alt="Product 8">
+            <div class="product-title">Product 8</div>
+            <div class="product-price">$89.99</div>
+        </div>
+
+        <!-- Product Card 9 -->
+        <div class="product-card">
+            <img src="/product  img 09.jpg" alt="Product 9">
+            <div class="product-title">Product 9</div>
+            <div class="product-price">$99.99</div>
+        </div>
+    </div>
+</body>
+</html>
