@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Video Example</title>
+</head>
+<body>
+    <h2>Audio and Video with Muted, Loop, Autoplay</h2>
+    
+    <video width="600" height="400" autoplay loop muted>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    
+    <audio autoplay loop muted>
+        <source src="" type="audio/mp3">
+        <source src= type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css"
+     src="https://www.google.com/maps/@23.0138259,72.6505954,2815m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" async defer></script>
+    
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        
+        <!-- Contact Form -->
+        <form id="contact-form" method="POST" onsubmit="return validateForm()">
+            <div class="form-field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <span id="name-error" class="error-message"></span>
+            </div>
+            
+            <div class="form-field">
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                <span id="mobile-error" class="error-message"></span>
+            </div>
+            
+            <div class="form-field">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                <span id="message-error" class="error-message"></span>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        
+        <!-- Google Map Embed -->
+        <div id="map"></div>
+    </div>
+</body>
+</html>
+
